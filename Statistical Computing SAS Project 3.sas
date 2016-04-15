@@ -1,8 +1,3 @@
-*Matt Trombley;
-*STAT 4020;
-*Project 5;
-*3/12/2015;
-
 DM 'LOG;CLEAR;OUT;CLEAR;';
 OPTIONS NODATE NONUMBER;
 

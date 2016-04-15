@@ -1,8 +1,3 @@
-*Matt Trombley;
-*STAT 4020;
-*Project 4;
-*3/5/2015;
-
 *Question 1;
 
 DM 'log;clear;out;clear;';
@@ -26,7 +21,7 @@ INPUT ID Gender $ Age Vault Floor PBar;
 	7 M 9 5.4 5.9 6.1
 	6 F 15 8.2 8.2 7.9
 	;
-	
+
 DATA gymincome;
 LENGTH ID 8 Income $8 LastName $10;
 INPUT ID Income $ LastName $;
@@ -68,7 +63,7 @@ QUIT;
 
 PROC SORT data=gym; BY ID;
 PROC SORT data=gymincome; BY ID;
-DATA gymall; 
+DATA gymall;
 merge gym gymincome; BY ID;
 PROC PRINT data=gymall;
 FORMAT Gender $gendertag.;
@@ -113,4 +108,3 @@ PROC PRINT DATA=tdf (obs=5);
  var LastName FirstName TeamName stagesum;
 RUN;
 QUIT;
-
